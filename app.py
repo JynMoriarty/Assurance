@@ -12,7 +12,7 @@ p4= open("modelEN.pkl","rb")
 elastic_model = pickle.load(p4)
 st.set_page_config(page_title="Assur'Aimant")
 st.title('Prédiction des primes assurances')
-regression=st.sidebar.selectbox("Choissisez l'algorithme de régression",("Linear","Ridge","Lasso","ElasticNet"))
+regression=st.sidebar.selectbox("Choissisez l'algorithme de régression",("Linear","ElasticNet"))
 st.image(image, caption='Votre assurance préférée')
 
 taille = st.number_input("Entrez votre taille (en cm)",140,200,160)
